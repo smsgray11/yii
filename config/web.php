@@ -11,10 +11,14 @@ $config = [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
+ //   'controllerMap' => [
+ //      'test' => 'app\controllers\SiteController',
+ //   ],
+   // 'defaultRoute' => 'site/about',
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'mELvaWP5MVVdJgsVAdD-nwsCoLDCT1Nk',
+            'cookieValidationKey' => 'f-QSvW11rLIlHZeSxjI164-vTnA3IxR8',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',

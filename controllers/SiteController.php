@@ -41,10 +41,6 @@ class SiteController extends Controller
     /**
      * {@inheritdoc}
      */
-    //
-    public function test(){
-
-    }
     public function actions()
     {
         return [
@@ -127,6 +123,6 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
-        return $this->render('about');
+        return $this->render('/site/about');
     }
 }
