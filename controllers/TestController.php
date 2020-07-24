@@ -21,7 +21,8 @@ class TestController extends Controller
 //        return $this->renderPartial('index');
         $this->my_var = 'My variable';
 //        debug(\yii::$app);
-        \yii::$app->view->params['t1'] = 'T1 params 123';
+//        \yii::$app->view->params['t1'] = 'T1 params 123';
+        $this->view->params['t1'] = 'T1 params 123';
         return $this->render('index', compact('name', 'age'));
         /*       return $this->render('index',[
                    'name' => $name,

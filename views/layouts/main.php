@@ -73,8 +73,10 @@ AppAsset::register($this);
  <?= $this->context->my_var; ?>
 <?php endif; ?>
 <p><?= $this->params['t1']; ?></p>
-
-
+<p><?= $this->params['t2']; ?></p>
+<?php if (isset($this->blocks['block1'])): ?>
+    <?= $this->blocks['block1'] ?>
+<?php endif; ?>
 
 <footer class="footer">
     <div class="container">
