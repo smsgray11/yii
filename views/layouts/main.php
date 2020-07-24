@@ -68,7 +68,7 @@ AppAsset::register($this);
         <?= $content ?>
     </div>
 </div>
-
+<?//= $this->context->my_var; ?>
 <?php if (isset($this->context->my_var)) : ?>
  <?= $this->context->my_var; ?>
 <?php endif; ?>
