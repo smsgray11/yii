@@ -16,19 +16,20 @@ class TestController extends AppController
     public function actionIndex($name = Guest, $age = 25)
     {
         $this->layout = 'test';
+
 //        var_dump($_GET);
 //        var_dump($name, $age);
 //        return 'Hello world!';
 //        return $this->renderFile('@app/views/test/index.php');
 //        return $this->renderAjax('index');
 //        return $this->renderPartial('index');
-        $this->my_var = 'My variable';
+//        $this->my_var = 'My variable';
 //        debug(\yii::$app);
 //        \yii::$app->view->params['t1'] = 'T1 params 123';
         $this->view->params['t1'] = 'T1 params 123';
-        \Yii::$app->view->on(View::EVENT_END_BODY, function () {
-            echo " <p> &copy; Yii2 " . date("Y") . "</p>";
-        });
+//        \Yii::$app->view->on(View::EVENT_END_BODY, function () {
+//            echo " <p> &copy; Yii2 " . date("Y") . "</p>";
+//        });
         return $this->render('index', compact('name', 'age'));
         /*       return $this->render('index',[
                    'name' => $name,

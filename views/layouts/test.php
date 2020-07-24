@@ -1,7 +1,7 @@
 <?php
 
 use yii\helpers\Html;
-
+\app\assets\TestAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!doctype html>
