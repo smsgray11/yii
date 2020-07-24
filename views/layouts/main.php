@@ -73,6 +73,7 @@ AppAsset::register($this);
 <p><?= $this->params['t1']; ?></p>
 
 
+
 <footer class="footer">
     <div class="container">
         <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
