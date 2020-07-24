@@ -67,6 +67,12 @@ AppAsset::register($this);
     </div>
 </div>
 
+<?php if (isset($this->context->my_var)) : ?>
+ <?= $this->context->my_var; ?>
+<?php endif; ?>
+<p><?= $this->params['t1']; ?></p>
+
+
 <footer class="footer">
     <div class="container">
         <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
